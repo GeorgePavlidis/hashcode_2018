@@ -20,7 +20,7 @@ def calc_distance(x1, y1, x2, y2):
     if x1 == x2 and y1 == y2:
         return 0
     d = abs(x2 - x1) + abs(y2 - y1)
-    return math.ceil(d)
+    return d
 
 
 
