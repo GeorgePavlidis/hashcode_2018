@@ -23,8 +23,7 @@ def read_data(infile):
 
 def algorithm(data, info_cars):
 	rides = copy.copy(data[6])
-	rides = sorted(rides, key=lambda eval: [eval[4], -eval[6]])
-
+	rides = sorted(rides, key=lambda eval: [eval[5]-eval[6]])
 	# for every ride
 	for r in rides:
 		total_dis = []
