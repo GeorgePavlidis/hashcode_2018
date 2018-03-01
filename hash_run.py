@@ -5,14 +5,14 @@ def read_data(infile):
 
     with open(infile, 'r') as fin:
 
-        R, C, F, N, B, T = [int(num) for num in fin.readline().split()]
+        rows, columns, vehicles, num_rides, bonus, steps = [int(num) for num in fin.readline().split()]
 
         rides = []
-        for _ in range(N):
+        for _ in range(num_rides):
             ride = [int(num) for num in fin.readline().split()]
             rides.append(ride)
 
-        return R, C, F, N, B, T, rides
+        return rows, columns, vehicles, num_rides, bonus, steps, rides
 
 
 def calc_distance(x1, y1, x2, y2):
