@@ -1,5 +1,5 @@
 import argparse
-import math
+
 
 def read_data(infile):
 
@@ -11,7 +11,6 @@ def read_data(infile):
         for _ in range(N):
             ride = [int(num) for num in fin.readline().split()]
             rides.append(ride)
-
 
         return R, C, F, N, B, T, rides
 
